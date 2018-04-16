@@ -17,7 +17,8 @@ app.use(bodyParser.json());
 // Routes
 // =============================================================
 var root = __dirname;
-require('./routing/htmlRoutes.js')(app,root);
+require('./app/routing/htmlRoutes.js')(app,root);
+require('./app/routing/apiRoutes.js')(app,root);
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
