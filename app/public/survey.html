@@ -16,7 +16,7 @@
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-  <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css"> -->
 
 </head>
 
@@ -240,16 +240,16 @@
           name: $("#name").val(),
           photo: $("#photo").val(),
           scores: [
-            $("#q1").val(),
-            $("#q2").val(),
-            $("#q3").val(),
-            $("#q4").val(),
-            $("#q5").val(),
-            $("#q6").val(),
-            $("#q7").val(),
-            $("#q8").val(),
-            $("#q9").val(),
-            $("#q10").val()
+            Number($("#q1").val()),
+            Number($("#q2").val()),
+            Number($("#q3").val()),
+            Number($("#q4").val()),
+            Number($("#q5").val()),
+            Number($("#q6").val()),
+            Number($("#q7").val()),
+            Number($("#q8").val()),
+            Number($("#q9").val()),
+            Number($("#q10").val())
           ]
         };
 
