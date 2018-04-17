@@ -6,7 +6,10 @@ module.exports = function(app,root) {
 	});
 
 	app.post('/api/friends', function (req,res) {
+		console.log('incoming: ');
+		console.log(req.body);
 		var baseScore = req.body.scores;
+		console.log('Scores Type: '+typeof(req.body.scores[0]));
 		console.log('Base Score: '+baseScore);	
 		var bestMatch = 0;
 		var bestScore = 50;
